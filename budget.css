@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+  display:flex;
+  justify-content: center;
+  padding: 40px;
+  background: #100f3d;
+}
+
+.container {
+  width: auto;
+  padding: 20px;
+  background: rgb(139, 136, 136);
+  border-radius: 10px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+li span {
+  flex: 1;
+}
+
+ul button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+ul button:hover {
+  background-color: #cc0000;
+}
+h2{
+  color: #0f75e3;
+}
+  #income{
+  color: #0d7013;
+}
+#expense{
+  color: #cc0000;
+}
+canvas {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 10px auto;
+  float:1;
+  
+}
+.chart-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+form{
+height: 40px;}
+
+

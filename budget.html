@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="budget.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Budget Tracker</h1>
+    <input type="text" id="searchInput" placeholder="Search transactions..." oninput="filterTransactions()">
+
+    <h2>Balance: $<span id="balance"></span></h2>
+    
+
+    <form id="entryForm">
+      <label><h3> Category:</h3></label>
+      <select id="category" title="Select income category">
+        <option value="Salary">Salary</option>
+        <option value="bussiness">Bussiness</option>
+        <option value="asset">Asset</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <input type="text" id="description" placeholder="Enter Income..." required />
+      <input type="number" step="any"id="amount" placeholder="Amount" required />
+      <button type="submit">Add</button>
+    </form>
+    <form id="entryFormex">
+      <label><h3> Category:</h3></label>
+      <select id="categoryex" title="Select expense category">
+        <option value="Food">Food</option>
+        <option value="Transport">Transport</option>
+        <option value="Rent">Rent</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <input type="text" id="descriptionex" placeholder="Enter Expenditure..." required />
+      <input type="number" step="any" id="amountex" placeholder="Amount" required />
+      <button type="submit">Add</button>
+    </form>
+  
+    <ul id="transactions"></ul>
+
+  <h3 id="income">Total Income: shs.<span id="incomeTotal"></span></h3>
+  <h3 id="expense">Total Expenses: shs.<span id="expenseTotal"></span></h3>
+
+  <button onclick="exportToCSV()">Export excel</button>
+    
+  
+  <div class="chart-container">
+  <canvas id="incomeChart" ></canvas>
+  <canvas id="expenseChart"></canvas>
+</div>
+
+
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="budget.js"></script>
+
+</body>
+</html>
