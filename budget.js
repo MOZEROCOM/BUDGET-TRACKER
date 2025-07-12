@@ -80,8 +80,8 @@ function updateDOM() {
     deleteBtn.onclick = () => {
   if (confirm("Delete this transaction?")) {
     transactions.splice(index, 1);
-    saveAndUpdate();
-  }
+    localStorage.setItem("transactions", JSON.stringify(transactions));
+    updateDOM();  }
 };
 
 
