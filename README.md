@@ -54,7 +54,7 @@ A modern, beginner-friendly web-based budget tracker built using **HTML, CSS, Ja
 ## 🧑‍💻 Author
 
 **Mozes** – Aspiring software engineer and creator of this budget tracker 💪  
-Follow me on GitHub: [@MOZEROCOM](https://github.com/MOZEROCOM)
+Follow me on GitHub: [@Moses-git93](https://github.com/Moses-git93)
 
 ---
 
