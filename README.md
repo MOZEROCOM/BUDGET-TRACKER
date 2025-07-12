@@ -14,9 +14,7 @@ A modern, beginner-friendly web-based budget tracker built using **HTML, CSS, Ja
 
 ## 🔴 Live Demo
 
-👉 [View the app on GitHub Pages](https://MOZEROCOM.github.io/budget-tracker/)
-
-> Replace the link above with your real GitHub Pages URL after publishing.
+👉 [View the app on GitHub Pages](https://github.com/MOZEROCOM/BUDGET-TRACKER)
 
 ---
 
@@ -66,5 +64,3 @@ MIT License – feel free to use and modify!
 
 ---
 
-Let me know when the live site is up and I’ll test it myself 🔥  
-Or if you want to add a contact form, bar chart, or turn it into a downloadable desktop app.
