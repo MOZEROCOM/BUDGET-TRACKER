@@ -102,6 +102,38 @@ canvas {
 form {
   height: auto;
 }
+footer{
+  background-color: #8ea3b8;
+  box-shadow:50px #5e5959;
+  border-radius:10% ;
+   padding: 20px 0;
+    text-align: center;
+     color: #333;
+      font-family: sans-serif;
+       border-top: 1px solid #ddd;
+}
+#div1{
+  max-width: 900px;
+   margin: auto;
+}
+#h31{
+  margin-bottom: 5px;
+}
+#p1{
+  margin-top: 0; font-size: 14px;
+}
+#div2{
+   margin: 15px 0;
+}
+a{
+  margin: 0 10px;
+   color: #007bff;
+    text-decoration: none;
+    display: block;
+}
+#p2{
+   font-size: 12px; color: #777;
+}
 /* ========== MOBILE FIRST (default) styles are already set ========== */
 
 /* ========== DESKTOP VIEW ========== */
