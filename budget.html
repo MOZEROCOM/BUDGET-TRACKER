@@ -3,50 +3,75 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  
+  <title>Budget Tracker by Mozes</title>
+  <meta name="description" content="Track your budget with this simple, fast, and free tool by Mozes.">
+  <meta name="keywords" content="budget tracker, money manager, finance, mozes">
+  <meta name="author" content="Mozes">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Budget Tracker</title>
-  <link rel="stylesheet" href="budget.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RBN1BRVXLD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RBN1BRVXLD');
+</script>
 <body>
   <div class="container">
-    <h1>Budget Tracker</h1>
+    
+    <h1>Simple Budget Tracker</h1>
+   <p> <b><em>“A budget is telling your money where to go instead of wondering where it went.”</em></b></p>
+   <p> <b><em>Budgeting gives you control, not restrictions.</em></b></p>
+
+
+    <p>Track your income and expenses with ease using this simple budget tracker.</p>
+
     <input type="text" id="searchInput" placeholder="Search transactions..." oninput="filterTransactions()">
 
-    <h2>Balance: $<span id="balance"></span></h2>
+
     
 
     <form id="entryForm">
-      <label><h3> Category:</h3></label>
+      <label><h3> MONEY IN</h3></label>
       <select id="category" title="Select income category">
+        <option value="" disabled selected>Select income category</option>
         <option value="Salary">Salary</option>
         <option value="bussiness">Bussiness</option>
         <option value="asset">Asset</option>
         <option value="Other">Other</option>
       </select>
 
-      <input type="text" id="description" placeholder="Enter Income..." required />
+      <input type="text" id="description" placeholder="Enter Income description..." required />
       <input type="number" step="any"id="amount" placeholder="Amount" required />
       <button type="submit">Add</button>
     </form>
     <form id="entryFormex">
-      <label><h3> Category:</h3></label>
+      <label><h3> MONEY OUT</h3></label>
       <select id="categoryex" title="Select expense category">
+        <option value="" disabled selected>Select expense category</option>
         <option value="Food">Food</option>
         <option value="Transport">Transport</option>
         <option value="Rent">Rent</option>
         <option value="Other">Other</option>
       </select>
 
-      <input type="text" id="descriptionex" placeholder="Enter Expenditure..." required />
+      <input type="text" id="descriptionex" placeholder="Enter Expenditure description..." required />
       <input type="number" step="any" id="amountex" placeholder="Amount" required />
       <button type="submit">Add</button>
     </form>
   
     <ul id="transactions"></ul>
 
-  <h3 id="income">Total Income: shs.<span id="incomeTotal"></span></h3>
-  <h3 id="expense">Total Expenses: shs.<span id="expenseTotal"></span></h3>
+  <h3 id="income">Total Income: <span id="incomeTotal"></span></h3>
+  <h3 id="expense">Total Expenses: <span id="expenseTotal"></span></h3>
+  <h2>Balance: <span id="balance"></span></h2>
 
   <button onclick="exportToCSV()">Export excel</button>
     
@@ -55,13 +80,30 @@
   <canvas id="incomeChart" ></canvas>
   <canvas id="expenseChart"></canvas>
 </div>
+<footer >
+  <div id="div1">
+    <h3 id="h31">Built by Muyanga Moses.</h3>
+    <p id="p1">
+      Actuarial science student at Makerere University(2025-2028), tech enthusiast, and future 
+      financial risk analyst. I build web apps, automate tasks, and solve problems with data 
+      driven decisions, systems thinking approach,modular code and curiosity.
+    </p>
 
+    <div id="div2">
+      <a href="https://personal-web-cef87.web.app" id="emai">Personal Website</a>     
+      <a href="mailto:mozerowhiten93@gmail.com" id="email">📧 mozerowhiten93@gmail.com</a>
+      <a href="https://github.com/Moses-git93" target="_blank" rel="noopener noreferrer"id="git">💻 GitHub</a>
+      <a href="tel:+256768473020"id="phone" >📞+256768473020</a>
+    </div>
 
+    <p id="p2">&copy; 2025 Moses. All rights reserved.</p>
+  </div>
+</footer>
 
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="budget.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
